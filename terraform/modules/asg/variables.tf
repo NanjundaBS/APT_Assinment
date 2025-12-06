@@ -7,8 +7,8 @@ variable "iam_instance_profile" { type = string }
 variable "ec2_sg_id" { type = string }
 variable "app_port" { 
     type = number
-     default = 8080 
-     }
+    default = 8080 
+    }
 variable "ami_id" { 
     type = string
      default = "" 

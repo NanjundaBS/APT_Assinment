@@ -46,8 +46,7 @@ resource "aws_route_table_association" "public_assoc" {
 }
 
 resource "aws_eip" "nat_eip" {
-    domain = "vpc"
-    
+  domain = "vpc"
   tags = { Name = "${var.project}-nat-eip" }
 }
 
