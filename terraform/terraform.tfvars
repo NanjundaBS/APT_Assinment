@@ -1,0 +1,10 @@
+aws_region = "us-east-1"
+project = "oneclick"
+vpc_cidr = "10.0.0.0/16"
+public_subnets = ["10.0.0.0/20","10.0.16.0/20"]
+private_subnets = ["10.0.128.0/20","10.0.144.0/20"]
+instance_type = "t3.micro"
+asg_desired_capacity = 2
+ssh_cidr = ""            # keep empty for no SSH
+alb_enable_https = false # default false (no certificate ARN)
+ami_id = "ami-0fa3fe0fa7920f68e"              # optional: "ami-0abcdef1234567890"
